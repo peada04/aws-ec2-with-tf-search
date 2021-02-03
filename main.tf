@@ -24,7 +24,6 @@ resource "aws_instance" "web" {
   count         = 1
 
   tags = {
-    Name = "workshop_demo_2021"
     name = "${var.prefix}-vpc-${var.region}"
     owner = var.prefix
     region = var.hashi-region
