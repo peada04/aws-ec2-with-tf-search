@@ -22,3 +22,12 @@ variable "ttl" {
   description = "time to live before reaper should delete"
 }
 
+variable "Department" {
+  default = "Test"
+  description = "department using the resource"
+} 
+
+variable "Billable" {
+  default = "No"
+  description = "to bill or not to bill"
+} 
