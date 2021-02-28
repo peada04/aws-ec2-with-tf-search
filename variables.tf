@@ -45,8 +45,8 @@ variable "ttl" {
   description = "time to live before reaper should delete"
 }
 
-variable "Department {
-  description = "the department the resource is for
+variable "Department" {
+  description = "the department the resource is for"
     }
 
 variable "Billable" {
