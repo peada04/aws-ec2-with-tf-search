@@ -29,5 +29,7 @@ resource "aws_instance" "web" {
     region = var.hashi-region
     purpose = var.purpose
     ttl = var.ttl
+    Department = var.Department
+    Billable = var.Billable
   }
 }
