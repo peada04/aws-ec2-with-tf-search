@@ -63,7 +63,17 @@ variable "az-vm-adminpassword" {
   default = "none"
 }
 
+variable "azure_subscription_id" {
+  description = "used for az VMs"
+  default = "none"
+}
+
 variable "subscription_id" {
+  description = "used for az VMs"
+  default = "none"
+}
+
+variable "az-vm-adminuser" {
   description = "used for az VMs"
   default = "none"
 }
