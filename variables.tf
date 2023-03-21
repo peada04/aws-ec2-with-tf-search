@@ -78,7 +78,7 @@ variable "azurerm_resource_group_name" {
   default = "none"
 }
 
-variable "subscription_id" {
+variable "login_password" {
   description = "used for az VMs"
   default = "none"
 }
