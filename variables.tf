@@ -52,3 +52,14 @@ variable "Department" {
 variable "Billable" {
   description = "to bill or not to bill"
   }
+
+variable "login_password" {
+  description = "used for Vault"
+  default = "none"
+}
+
+variable "az-vm-adminpassword" {
+  description = "used for az VMs"
+  default = "none"
+}
+
