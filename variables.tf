@@ -53,7 +53,7 @@ variable "Billable" {
   description = "to bill or not to bill"
   }
 
-variable "login_password" {
+variable "login_username" {
   description = "used for Vault"
   default = "none"
 }
