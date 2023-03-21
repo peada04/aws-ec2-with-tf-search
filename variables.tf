@@ -63,3 +63,32 @@ variable "az-vm-adminpassword" {
   default = "none"
 }
 
+variable "subscription_id" {
+  description = "used for az VMs"
+  default = "none"
+}
+
+variable "tenant_id" {
+  description = "used for az VMs"
+  default = "none"
+}
+
+variable "azurerm_resource_group_name" {
+  description = "used for az VMs"
+  default = "none"
+}
+
+variable "subscription_id" {
+  description = "used for az VMs"
+  default = "none"
+}
+
+variable "vault_address" {
+  description = "vault"
+  default = "none"
+}
+
+variable "vault_namespace" {
+  description = "vault"
+  default = "none"
+}
