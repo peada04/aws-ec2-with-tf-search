@@ -34,6 +34,7 @@ resource "aws_instance" "web" {
 }
 
 check "aws_instances_stopped" {
+  depends_on = [ aws_instance.web ]
   data "aws_instances" "web" {
     instance_state_names = ["stopped"]
   }
