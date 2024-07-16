@@ -32,3 +32,13 @@ resource "aws_instance" "web" {
     Billable = var.Billable
   }
 }
+
+check "aws_instances_stopped" {
+  data "aws_instances" "example" {
+    instance_state_names = "stopped"
+  }
+  assert {
+    condition     = length(data.aws_instances.example) > 0
+    error_message = format("Found Instances have stopped! Instance ID’s: %s", data.aws_instances.example.ids)
+  }
+}
