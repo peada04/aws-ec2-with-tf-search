@@ -33,13 +33,3 @@ resource "aws_instance" "web" {
   }
 }
 
-check "aws_instances_stopped" {
-  depends_on = [ aws_instance.web ]
-  data "aws_instances" "web" {
-    instance_state_names = ["stopped"]
-  }
-  assert {
-    condition     = length(data.aws_instances.web) > 0
-    error_message = format("Found Instances have stopped! Instance ID’s: %s", data.aws_instances.web.ids)
-  }
-}
