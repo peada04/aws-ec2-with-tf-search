@@ -74,3 +74,4 @@ resource "aws_instance" "search_example_0" {
   # Private DNS name options
   private_dns_name_options {
     enable_resource_name_dns_a_record    =_
+  }
